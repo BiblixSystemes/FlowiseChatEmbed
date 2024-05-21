@@ -45,6 +45,17 @@ export const Badge = (props: Props) => {
       }}
     >
       Attention l'IA peut se tromper, et n'est pas fiable à 100% !
+      <a
+        ref={liteBadge}
+        href={'https://flowiseai.com'}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="lite-badge"
+        id="lite-badge"
+        style={{ 'font-weight': 'bold', color: props.poweredByTextColor ?? defaultTextColor }}
+      >
+        <span> Flowise</span>
+      </a>
     </span>
   );
 };
